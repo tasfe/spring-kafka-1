@@ -19,17 +19,13 @@ public class KafkaController {
     private KafkaTemplate kafkaTemplate;
 
     @RequestMapping(value = "/test")
-    public @ResponseBody
-    Object index(){
-        for (int i=0;i<1000;i++){
+    public @ResponseBody Object index() {
+        for (int i = 0; i < 1000; i++) {
             logger.info("======send=====" + i);
-            kafkaTemplate.send("test","key","测试");
+            kafkaTemplate.send("test", "key", "测试");
         }
         return "finished";
     }
-
-
-
 
 
 }
