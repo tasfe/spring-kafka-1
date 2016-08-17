@@ -89,7 +89,7 @@
 
     </dependencies>
     <build>
-        <finalName>kafka</finalName>
+        <finalName>spring-integration-kafka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
